@@ -1,12 +1,15 @@
 # Custom-Toast
 
-## Step 1. Create a Custom Layout for the Toast:
+
+
+
+
+### Step 1. Create a Custom Layout for the Toast:
 
 - Create an XML layout file for your custom toast. For example, you can create a file named custom_toast_layout.xml in the res/layout directory:
 
 
 ```bash
-  
 <androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
@@ -41,14 +44,20 @@
     </LinearLayout>
 
 </androidx.cardview.widget.CardView>
-
 ```
 
-## Step 2. Create a Custom Toast Class:
+
+
+
+
+
+
+
+
+### Step 2. Create a Custom Toast Class:
 - Create a Java class for your custom toast. Here's an example:
 
 ```bash
-  
 import android.content.Context;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -77,16 +86,20 @@ public class CustomToast {
         toast.show();
     }
 }
-
 ```
 
-## Step 3.
+
+
+
+
+
+
+
+### Step 3.
 - In your activity, when handling a click event, call showCustomToast and pass the image resource ID along with the message:
 
 ```bash
-  
- 
-                      CustomToast.showCustomToast(YourActivity.this, "Clicked!", R.drawable.your_toast_icon_image);
 
+        CustomToast.showCustomToast(YourActivity.this, "Clicked!", R.drawable.your_toast_icon_image);
 
 ```
